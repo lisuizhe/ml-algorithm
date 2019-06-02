@@ -89,3 +89,13 @@
 5. feature engineering
   - add new features
   - remove features that do not seem to be informative
+
+# Advanced skills
+
+1. batch normalization
+2. depthwise separable convolution
+3. residual connection
+4. model ensembling
+  - tree-based method(random forest or gradient-boosted trees)
+  - dnn
+5. (automated) hyperparameter optimization

@@ -1,5 +1,22 @@
 # Contents
 
+- [Contents](#contents)
+- [Defining the problem and assembling a dataset](#defining-the-problem-and-assembling-a-dataset)
+- [Choosing a measure of success](#choosing-a-measure-of-success)
+- [Deciding on an evaluation protocol](#deciding-on-an-evaluation-protocol)
+- [Preparing data](#preparing-data)
+- [Developing a model that does better than a baseline](#developing-a-model-that-does-better-than-a-baseline)
+  - [If cannot beat random baseline](#if-cannot-beat-random-baseline)
+  - [If goes well](#if-goes-well)
+- [Scaling up: developing a model that overfits](#scaling-up-developing-a-model-that-overfits)
+- [Regularizing model and tuning hyperparameters](#regularizing-model-and-tuning-hyperparameters)
+- [Advanced skills](#advanced-skills)
+- [Debuging a learning algorithm](#debuging-a-learning-algorithm)
+  - [check bias and variance](#check-bias-and-variance)
+  - [fix high bias](#fix-high-bias)
+  - [fix high variance](#fix-high-variance)
+  - [error analysis](#error-analysis)
+
 # Defining the problem and assembling a dataset
 
 1. input/output data
@@ -99,3 +116,29 @@
   - tree-based method(random forest or gradient-boosted trees)
   - dnn
 5. (automated) hyperparameter optimization
+
+# Debuging a learning algorithm
+
+## check bias and variance
+
+- bias = loss_train - loss_baseline
+- variance = loss_validation - loss_train
+
+## fix high bias
+
+- try getting additional features
+- try adding polynomial features
+- try decreasing lambda(regulation parameter)
+
+## fix high variance
+
+- get more training examples
+- try smaller sets of features
+- try increasing lambda(regulation parameter)
+
+## error analysis
+
+- manually find 100 errors and group them
+- focus on major error group
+  - add more data on error group
+  - add feature for error group

@@ -117,6 +117,11 @@
   - tree-based method(random forest or gradient-boosted trees)
   - dnn
 5. (automated) hyperparameter optimization
+6. transfer learning
+  - supervised pretraining
+  - fine tuning
+    - option1: only train output layers parameters
+    - option2: train all parameters
 
 # Debuging a learning algorithm
 

@@ -16,6 +16,7 @@
   - [fix high bias](#fix-high-bias)
   - [fix high variance](#fix-high-variance)
   - [error analysis](#error-analysis)
+- [Getting more data](#getting-more-data)
 
 # Defining the problem and assembling a dataset
 
@@ -142,3 +143,8 @@
 - focus on major error group
   - add more data on error group
   - add feature for error group
+
+# Getting more data
+
+- data augmentation
+- data synthesis
